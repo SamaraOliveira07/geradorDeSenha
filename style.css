@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'RUSTY ATTACK DEMO';
+    src: url(./assets/RustyAttackDemo-d9X8l.otf);
+}
+
+*{
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #18181b;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main {
+    border: 4px solid #313131; 
+    background: linear-gradient(135deg, #18181b, #242424); 
+    max-width: 700px;
+    width: 90%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7), 0px 0px 10px rgba(52, 184, 15, 0.5); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo {
+    font-size: 3.5em; 
+    font-family: 'RUSTY ATTACK DEMO', sans-serif;
+    letter-spacing: 8px; 
+    color: rgb(52, 184, 15);
+    text-align: center;
+    text-shadow: 0px 0px 15px rgb(52, 184, 15); 
+    margin-bottom: 20px;
+    animation: glow 1.5s infinite alternate; 
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0px 0px 10px rgb(52, 184, 15);
+    }
+    to {
+        text-shadow: 0px 0px 20px rgb(52, 184, 15);
+    }
+}
+
+.security {
+    color: #dfdfdf; 
+    text-align: center;
+    margin-bottom: 35px;
+    font-family: Arial, sans-serif;
+    font-size: 1.8em;
+    letter-spacing: 2.5px;
+    background: linear-gradient(90deg, #313131, #484848); 
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    display: inline-block;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.security img{
+    width: 32px;
+}
+
+.container_input{
+    max-width: 480px;
+    margin: 14px 0;
+}
+
+.container_input span{
+    color: white;
+    font-size: 22px;
+}
+
+.slider {
+    appearance: none; 
+    width: 100%;
+    height: 18px;
+    border-radius: 10px;
+    background-color: #313131; 
+    outline: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.slider:hover {
+    background-color: #484848; 
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(52, 184, 15);
+    box-shadow: 0px 0px 10px rgb(52, 184, 15); 
+    border: 3px solid #18181b; 
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 15px rgb(52, 184, 15);
+}
+
+.slider::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(52, 184, 15);
+    box-shadow: 0px 0px 10px rgb(52, 184, 15);
+    border: 3px solid #18181b;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.slider::-moz-range-thumb:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 15px rgb(52, 184, 15);
+}
+
+
+.button_cta {
+    margin-top: 30px;
+    height: 50px;
+    background: linear-gradient(90deg, rgb(52, 184, 15), rgb(34, 150, 12)); 
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    box-shadow: 0px 0px 10px rgba(52, 184, 15, 0.5); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.button_cta:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 0px 20px rgba(52, 184, 15, 0.8); 
+    background: linear-gradient(90deg, rgb(34, 150, 12), rgb(52, 184, 15));
+}
+
+.button_cta:active {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(34, 150, 12, 0.6); 
+}
+
+
+.container_password{
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.title{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.password{
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.40);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid #313131;
+    transition: transform 0.5s;
+}
+
+.password:hover{
+    transform: scale(1.05);
+}
+
+.tooltip{
+    color: white;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    background-color: #151515;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all o.5s ease-in-out;
+}
+
+.hide{
+    display: none;
+}
+
+.container_password:hover .tooltip{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
